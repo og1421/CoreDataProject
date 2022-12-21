@@ -14,6 +14,8 @@
 		851C41832953B6CE009848F0 /* CoreDataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C41822953B6CE009848F0 /* CoreDataProjectTests.swift */; };
 		851C418D2953B6CE009848F0 /* CoreDataProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C418C2953B6CE009848F0 /* CoreDataProjectUITests.swift */; };
 		851C418F2953B6CE009848F0 /* CoreDataProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C418E2953B6CE009848F0 /* CoreDataProjectUITestsLaunchTests.swift */; };
+		851C419E2953B781009848F0 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 851C419C2953B781009848F0 /* CoreDataProject.xcdatamodeld */; };
+		851C41A12953B80E009848F0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C41A02953B80E009848F0 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		851C41882953B6CE009848F0 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		851C418C2953B6CE009848F0 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
 		851C418E2953B6CE009848F0 /* CoreDataProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		851C419D2953B781009848F0 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		851C41A02953B80E009848F0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 		851C416F2953B6CB009848F0 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				851C419C2953B781009848F0 /* CoreDataProject.xcdatamodeld */,
+				851C419B2953B6E2009848F0 /* VViews */,
+				851C419F2953B7F2009848F0 /* Model */,
 				851C41702953B6CB009848F0 /* CoreDataProjectApp.swift */,
-				851C41722953B6CB009848F0 /* ContentView.swift */,
 				851C41742953B6CD009848F0 /* Assets.xcassets */,
 				851C41762953B6CD009848F0 /* CoreDataProject.entitlements */,
 				851C41772953B6CD009848F0 /* Preview Content */,
@@ -127,6 +133,22 @@
 				851C418E2953B6CE009848F0 /* CoreDataProjectUITestsLaunchTests.swift */,
 			);
 			path = CoreDataProjectUITests;
+			sourceTree = "<group>";
+		};
+		851C419B2953B6E2009848F0 /* VViews */ = {
+			isa = PBXGroup;
+			children = (
+				851C41722953B6CB009848F0 /* ContentView.swift */,
+			);
+			path = VViews;
+			sourceTree = "<group>";
+		};
+		851C419F2953B7F2009848F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				851C41A02953B80E009848F0 /* DataController.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				851C41732953B6CB009848F0 /* ContentView.swift in Sources */,
+				851C41A12953B80E009848F0 /* DataController.swift in Sources */,
 				851C41712953B6CB009848F0 /* CoreDataProjectApp.swift in Sources */,
+				851C419E2953B781009848F0 /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +628,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		851C419C2953B781009848F0 /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				851C419D2953B781009848F0 /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 851C419D2953B781009848F0 /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 851C41652953B6CB009848F0 /* Project object */;
 }
