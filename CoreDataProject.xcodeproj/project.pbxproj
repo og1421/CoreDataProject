@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8511D6FA2953E57300A8F12B /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 851C419C2953B781009848F0 /* CoreDataProject.xcdatamodeld */; };
+		8511D6FB2953E57400A8F12B /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 851C419C2953B781009848F0 /* CoreDataProject.xcdatamodeld */; };
+		8511D6FD2953E7B400A8F12B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511D6FC2953E7B400A8F12B /* Persistence.swift */; };
 		851C41712953B6CB009848F0 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C41702953B6CB009848F0 /* CoreDataProjectApp.swift */; };
 		851C41732953B6CB009848F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C41722953B6CB009848F0 /* ContentView.swift */; };
 		851C41752953B6CD009848F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851C41742953B6CD009848F0 /* Assets.xcassets */; };
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8511D6FC2953E7B400A8F12B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		851C416D2953B6CB009848F0 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851C41702953B6CB009848F0 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		851C41722953B6CB009848F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				851C41A02953B80E009848F0 /* DataController.swift */,
+				8511D6FC2953E7B400A8F12B /* Persistence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			files = (
 				851C41732953B6CB009848F0 /* ContentView.swift in Sources */,
 				851C41A12953B80E009848F0 /* DataController.swift in Sources */,
+				8511D6FD2953E7B400A8F12B /* Persistence.swift in Sources */,
 				851C41712953B6CB009848F0 /* CoreDataProjectApp.swift in Sources */,
 				851C419E2953B781009848F0 /* CoreDataProject.xcdatamodeld in Sources */,
 			);
@@ -292,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8511D6FA2953E57300A8F12B /* CoreDataProject.xcdatamodeld in Sources */,
 				851C41832953B6CE009848F0 /* CoreDataProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 			files = (
 				851C418D2953B6CE009848F0 /* CoreDataProjectUITests.swift in Sources */,
 				851C418F2953B6CE009848F0 /* CoreDataProjectUITestsLaunchTests.swift in Sources */,
+				8511D6FB2953E57400A8F12B /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
