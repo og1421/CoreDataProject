@@ -7,10 +7,15 @@
 import CoreData
 import SwiftUI
 
+enum Predicates: String {
+    case BeginWith = "BEGINWITH", Equal = "==", GreatherThan = ">", LowerThan = "<", In = "IN", BeginsWithC = "BEGINSWITH[c]"
+}
+
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
     let content: (T) -> Content
-    
+//    var predicates: Predicates
+
     var body: some View {
         List(fetchRequest, id: \.self) {item in
             self.content(item)
