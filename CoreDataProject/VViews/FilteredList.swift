@@ -8,13 +8,13 @@ import CoreData
 import SwiftUI
 
 enum Predicates: String {
-    case BeginWith = "BEGINWITH", Equal = "==", GreatherThan = ">", LowerThan = "<", In = "IN", BeginsWithC = "BEGINSWITH[c]"
+    case BeginsWith = "BEGINSWITH", Equal = "==", GreatherThan = ">", LowerThan = "<", In = "IN", BeginsWithC = "BEGINSWITH[c]"
 }
 
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
     let content: (T) -> Content
-//    var predicates: Predicates
+    var predicates: Predicates
 
     var body: some View {
         List(fetchRequest, id: \.self) {item in
@@ -22,8 +22,9 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue))
+    init(filterKey: String, filterValue: String, predicates: Predicates, @ViewBuilder content: @escaping (T) -> Content) {
+        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicates.rawValue) %@", filterKey, filterValue))
         self.content = content
+        self.predicates = predicates
     }
 }
